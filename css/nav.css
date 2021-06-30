@@ -1,0 +1,88 @@
+.tm{
+    background-color: #1c313a;
+    color : #e0e0e0;
+    display : flex;
+    justify-content : space-between;
+}
+
+.tm__logo-set{
+    display: flex;
+    align-items: center;
+    padding : .5rem;
+    margin : 1rem 0 1rem 1rem;
+}
+
+.tm__logo-set > i{
+    color : orange;
+    font-size: 3rem;
+    margin: .5rem;
+
+}
+.tm__logo-set > div{
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+
+.tm ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tm__menu-list{
+    margin: 0 1rem;
+    justify-content: space-between;
+}
+
+.tm__menu-list > li,
+.tm__social > li{
+    padding : .5rem;
+    text-align: center;
+}
+
+.tm__menu-list > li:hover{
+    background-color: orange;
+    border-radius: .3rem;
+    width: 100%;
+}
+
+.tm__social{
+    margin : 1rem;
+}
+
+.tm__pop{
+    font-size: 2rem;
+    margin: .5rem;
+    display: none;
+    position: absolute;
+    top : 1.5rem;
+    right: 1.5rem;
+}
+
+.tm__pop a > i{
+    color : orange;
+    padding: .5rem;
+}
+
+@media screen and (max-width : 768px) {
+    .tm{
+        flex-direction: column;
+    }
+    .tm__menu-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .tm__social{
+        display: flex;
+        justify-content : center;
+    }
+    .tm__menu-list.s-hide,
+    .tm__social.s-hide{
+        display: none;
+    }
+    .tm__pop{
+        display: block;
+    }
+}

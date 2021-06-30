@@ -1,0 +1,15 @@
+html,
+html > * {
+    all : unset;
+}
+html {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color : white;
+}

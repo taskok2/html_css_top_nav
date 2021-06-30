@@ -1,0 +1,9 @@
+@import "reset.css";
+@import "nav.css";
+
+.ms,
+.ms__content{
+    background-color: #fff8e1;
+    height : 100%;
+}
+
