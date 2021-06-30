@@ -74,6 +74,7 @@
     .tm__menu-list{
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     .tm__social{
         display: flex;
