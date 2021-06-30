@@ -26,14 +26,15 @@
 
 .tm ul {
     list-style: none;
-    padding: 0;
     display: flex;
     align-items: center;
 }
 
 .tm__menu-list{
     margin: 0 1rem;
+    padding: 0 2rem;
     justify-content: space-between;
+    width: 100%;
 }
 
 .tm__menu-list > li,
@@ -45,11 +46,11 @@
 .tm__menu-list > li:hover{
     background-color: orange;
     border-radius: .3rem;
-    width: 100%;
 }
 
 .tm__social{
     margin : 1rem;
+    padding: 0;
 }
 
 .tm__pop{
@@ -81,6 +82,9 @@
     .tm__menu-list.s-hide,
     .tm__social.s-hide{
         display: none;
+    }
+    .tm__menu-list > li:hover{
+        width: 100%;
     }
     .tm__pop{
         display: block;
