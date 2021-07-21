@@ -1,0 +1,52 @@
+.calculate-container{
+    display: flex;
+    margin-top: 4rem;
+    padding: 4rem;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.calculate-input{
+    border: none;
+    padding: 1rem;
+    background-color: var(--base-color);
+    color : white;
+    font-size: 1.2rem;
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    margin-right: 2rem;
+    font-weight: 600;
+}
+
+.calculate-input:focus{
+    outline: none;
+    font-size: 1.2rem;
+    transform: scale(1.2, 1.2);
+    background-color: rgba(28, 49, 58, .9);
+    background-color: rgba(255, 165, 0, .9);
+}
+
+.calculate-input::placeholder{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, .5);
+}
+
+.calculate-input:focus::placeholder{
+    font-size: .8rem;
+    color: rgba(28, 49, 58, .5);
+}
+
+.calculate-input::-webkit-inner-spin-button,
+.calculate-input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+
+}
+
+.calculate-input{
+    -moz-appearance:textfield;
+}

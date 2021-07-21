@@ -1,6 +1,6 @@
 .tm{
-    background-color: #1c313a;
-    color : #e0e0e0;
+    background-color: var(--base-color);
+    color : var(--modify-white);
     display : flex;
     justify-content : space-between;
 }
@@ -13,7 +13,7 @@
 }
 
 .tm__logo-set > i{
-    color : orange;
+    color : var(--mark-color);
     font-size: 3rem;
     margin: .5rem;
 
@@ -44,7 +44,7 @@
 }
 
 .tm__menu-list > li:hover{
-    background-color: orange;
+    background-color: var(--mark-color);
     border-radius: .3rem;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .tm__pop a > i{
-    color : orange;
+    color : var(--mark-color);
     padding: .5rem;
 }
 

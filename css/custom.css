@@ -1,2 +1,7 @@
 @import "reset.css";
-@import "nav.css";
+@import "constants.css";
+
+@import "component/nav.css";
+@import "component/btns.css";
+
+@import "screen/arrow.css";
