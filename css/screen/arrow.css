@@ -1,8 +1,9 @@
-.calculate-container{
+#calculate-container{
     display: flex;
     margin-top: 4rem;
     padding: 4rem;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100%;
@@ -19,7 +20,7 @@
     border-radius: 30px;
     text-align: center;
     transition: all .5s ease-in-out;
-    margin-right: 2rem;
+    margin-right: 1rem;
     font-weight: 600;
 }
 
@@ -49,4 +50,21 @@
 
 .calculate-input{
     -moz-appearance:textfield;
+}
+
+.calculate-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--mark-color);
+    color : white;
+    margin-right: 1rem;
+}
+
+.calculate-result{
+    background-color: var(--light-base);
+    font-weight: 700;
+    width: 50%;
 }
