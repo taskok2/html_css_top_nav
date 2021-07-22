@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="robots" content="noindex, nofollow"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <title>HTML CSS Top Navigation Bar</title>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/dcb48a855b.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <head>
+            <nav class = "top-menu tm">
+                <div class="tm__logo-set">
+                    <i class="fab fa-joomla"></i>
+                    <div>DreamCoding</div>
+                </div>
+                <ul class="tm__menu-list s-hide">
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="arrow.html">Arrow</a></li>
+                    <li class="menu-item"><a href="quiz_array.html">Quiz</a></li>
+                    <li class="menu-item"><a href="callback_hell.html">Hell</a></li>
+                    <li class="menu-item"><a href="">QnA</a></li>
+                </ul>
+                <ul class="tm__social s-hide">
+                    <li class="sns-icon"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="sns-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+                <div class="tm__pop">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+        </head>
+        <main id="quiz-array-main">
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q1. make a string out of an array</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const fruits = ['apple', 'banana', 'orange'];<br/>
+                    <br/>
+                    const toString = fruits.toString();<br/>
+                    <br/>
+                    console.log(toString);<br/>
+                    console.log(typeof toString);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q2. make an array out of a string</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const fruits = '🍎, 🥝, 🍌, 🍒';<br/>
+                    <br/>
+                    const toArray = fruits.split(",");<br/>
+                    <br/>                  
+                    console.log(toArray);<br/>
+                    console.log(typeof toArray);<br/>
+                    console.log(toArray.constructor);<br/>
+                </div>
+            </div>   
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q3. make this array look like this: [5, 4, 3, 2, 1]</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const array = [1, 2, 3, 4, 5];<br/>
+                    <br/>
+                    const reverseArr = array.reverse();<br/>
+                    console.log(reverseArr);<br/>
+                </div>
+            </div> 
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q4. make new array without the first two elements</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const array = [1, 2, 3, 4, 5];<br/>
+                    <br/>
+                    const newArr = array.slice(2, array.length);<br/>
+                    console.log(newArr);<br/>
+                </div>
+            </div>
+            <div class="quiz-contents-block">
+                <blockquote>
+                    class Student {<br/>
+                        constructor(name, age, enrolled, score) {<br/>
+                          this.name = name;<br/>
+                          this.age = age;<br/>
+                          this.enrolled = enrolled;<br/>
+                          this.score = score;<br/>
+                        }<br/>
+                      }<br/>
+                      const students = [<br/>
+                        new Student('A', 29, true, 45),<br/>
+                        new Student('B', 28, false, 80),<br/>
+                        new Student('C', 30, true, 90),<br/>
+                        new Student('D', 40, false, 66),<br/>
+                        new Student('E', 18, true, 88),<br/>
+                      ];<br/>
+                </blockquote>
+            </div>   
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q5. find a student with the score 90</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const highGradeStudent = students.find(x => {return x.score === 90;});<br/>
+                    <br/>
+                    console.log(highGradeStudent);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q6. make an array of enrolled students</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const enrolledStudents = students.filter(x => {return x.enrolled;});<br/>
+                    <br/>
+                    console.log(enrolledStudents);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q7. make an array containing only the students' scores</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const scoreArr = students.map(x => {return x.score});<br/>
+                    <br/>
+                    console.log(scoreArr);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q8. check if there is a student with the score lower than 50</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const isLowerScoreStudent = students.some(m => {return 50 > m.score});<br/>
+                    <br/>
+                    console.log(isLowerScoreStudent);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q9. compute students' average score</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const averageScore = students.reduce((pre, cur)=>{return pre + cur.score}, 0)/students.length;<br/>
+                    <br/>
+                    console.log(averageScore);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Q10. make a string containing all the scores</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    const scoreArr = students.map(a=>{return a.score});<br/>
+                    const scoreStr = scoreArr.join(", ");<br/>
+                    <br/>
+                    console.log(scoreStr);<br/>
+                </div>
+            </div>
+            <div class="quiz-collapse bonus">
+                <div class="quiz-collapse__title">
+                    <span class="quiz-collapse__title-text">Bonus! do Q10 sorted in ascending order</span>
+                    <button type = "button" class="quiz-collapse__answer-btn base-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="quiz-collapse__body">
+                    students.sort((m, n)=>{return m.score - n.score});<br/>
+                    <br/>
+                    const scoreArr = students.map(a=>{return a.score});<br/>
+                    const scoreStr = scoreArr.join(", ");<br/>
+                    <br/>
+                    console.log(scoreStr);<br/>
+                </div>
+            </div>
+            <div class = "notice-btn">
+                <span class="notice-btn__header">!</span>
+                <span class="notice-btn__body hidden">Press F12 to open console and Paste my result!</span>
+            </div>
+        </main>
+
+        <br/>
+
+        <script src="js/nav.js" defer></script>
+        <script src="js/array-api.js" defer></script>
+        <script src="js/btn.js"defer></script>
+    </body>
+</html>

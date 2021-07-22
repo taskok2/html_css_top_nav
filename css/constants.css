@@ -3,4 +3,6 @@
     --light-base : #475f69;
     --mark-color : orange;
     --modify-white : #e0e0e0;
+    --red : #9c2424;
+    --red-trans : rgba(156, 36, 36, .5);
 }

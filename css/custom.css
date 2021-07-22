@@ -2,6 +2,7 @@
 @import "constants.css";
 
 @import "component/nav.css";
-@import "component/btns.css";
+@import "component/quiz.css";
+@import "component/btn.css";
 
 @import "screen/arrow.css";
